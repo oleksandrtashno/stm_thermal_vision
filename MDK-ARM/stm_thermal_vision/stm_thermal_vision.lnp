@@ -1,0 +1,28 @@
+--cpu Cortex-M7.fp.dp
+"stm_thermal_vision\startup_stm32f767xx.o"
+"stm_thermal_vision\ili9341_gfx.o"
+"stm_thermal_vision\ili9341_stm32_driver.o"
+"stm_thermal_vision\main.o"
+"stm_thermal_vision\stm32f7xx_hal_cortex.o"
+"stm_thermal_vision\stm32f7xx_hal_spi.o"
+"stm_thermal_vision\stm32f7xx_hal_spi_ex.o"
+"stm_thermal_vision\stm32f7xx_hal_rcc.o"
+"stm_thermal_vision\stm32f7xx_hal_rcc_ex.o"
+"stm_thermal_vision\stm32f7xx_hal_flash.o"
+"stm_thermal_vision\stm32f7xx_hal_flash_ex.o"
+"stm_thermal_vision\stm32f7xx_hal_gpio.o"
+"stm_thermal_vision\stm32f7xx_hal_dma.o"
+"stm_thermal_vision\stm32f7xx_hal_dma_ex.o"
+"stm_thermal_vision\stm32f7xx_hal_pwr.o"
+"stm_thermal_vision\stm32f7xx_hal_pwr_ex.o"
+"stm_thermal_vision\stm32f7xx_hal.o"
+"stm_thermal_vision\stm32f7xx_hal_i2c.o"
+"stm_thermal_vision\stm32f7xx_hal_i2c_ex.o"
+"stm_thermal_vision\stm32f7xx_hal_exti.o"
+"stm_thermal_vision\stm32f7xx_hal_tim.o"
+"stm_thermal_vision\stm32f7xx_hal_tim_ex.o"
+"stm_thermal_vision\system_stm32f7xx_1.o"
+--library_type=microlib --strict --scatter "stm_thermal_vision\stm_thermal_vision.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "stm_thermal_vision.map" -o stm_thermal_vision\stm_thermal_vision.axf

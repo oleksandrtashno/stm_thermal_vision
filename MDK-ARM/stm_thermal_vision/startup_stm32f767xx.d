@@ -1,0 +1,1 @@
+stm_thermal_vision\startup_stm32f767xx.o: startup_stm32f767xx.s
